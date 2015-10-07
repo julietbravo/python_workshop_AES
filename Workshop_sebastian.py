@@ -151,6 +151,7 @@ if Switch_plot_ICON_output == 1:
 				elif Switch_uns == 1:
 					plt.savefig(path+Var_str+'_'+pro+'_unstruc_time=%01.2f' %times[it] +'_height=%01.0f' %(int(z[ik]))+'.png', dpi=600)
 								
+                plt.clf()
 				
 			#printing a sftp statement for downloading plots:
 			print ('   cd '+path+'\n   lmkdir '+path_local_exp+'\n   lcd '+path_local_exp+'\n   lmkdir '+Var_str+'_Basemap\n   lcd '+Var_str+'_Basemap\n   get *')
